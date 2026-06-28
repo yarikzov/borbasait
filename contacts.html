@@ -63,16 +63,13 @@
       <div class="form-card">
         <h3 style="font-size:1.3rem;text-transform:none;margin-bottom:.3em;">Записаться на тренировку</h3>
         <p style="color:var(--muted);font-size:.9rem;margin-bottom:1.6em;">Оставьте заявку — администратор клуба свяжется с вами в течение дня.</p>
-        <form class="feedback-form" id="contact-form">
+        <form class="feedback-form">
           <div class="form-row"><label for="name">Имя</label><input id="name" name="name" type="text" placeholder="Ваше имя" required></div>
           <div class="form-row"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required></div>
           <div class="form-row"><label for="age">Возраст спортсмена</label><input id="age" name="age" type="text" placeholder="Например, 9 лет"></div>
           <div class="form-row"><label for="msg">Сообщение</label><textarea id="msg" name="message" rows="4" placeholder="Расскажите немного о себе или ребёнке"></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Отправить заявку</button>
         </form>
-        <p id="form-success" style="display:none;color:green;margin-top:1em;text-align:center;font-weight:600;">
-          ✓ Заявка отправлена! Мы свяжемся с вами в течение дня.
-        </p>
       </div>
 
     </div>
@@ -90,58 +87,5 @@
 </footer>
 
 <script src="main.js"></script>
-
-<script type="module">
-  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
-  import { getFirestore, addDoc, collection }
-    from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js';
-
-  const app = initializeApp({
-    apiKey:            "вставьте сюда",
-    authDomain:        "вставьте сюда",
-    projectId:         "вставьте сюда",
-    storageBucket:     "вставьте сюда",
-    messagingSenderId: "вставьте сюда",
-    appId:             "вставьте сюда"
-  });
-
-  const db = getFirestore(app);
-
-  // Используем отдельный ID чтобы не конфликтовать с main.js
-  const form = document.getElementById('contact-form');
-  const successMsg = document.getElementById('form-success');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    e.stopPropagation(); // останавливаем всплытие чтобы main.js не поймал
-
-    const btn = form.querySelector('button[type="submit"]');
-    const original = btn.textContent;
-    btn.textContent = 'Отправка...';
-    btn.disabled = true;
-
-    try {
-      await addDoc(collection(db, 'applications'), {
-        name:      document.getElementById('name').value,
-        phone:     document.getElementById('phone').value,
-        age:       document.getElementById('age').value,
-        message:   document.getElementById('msg').value,
-        status:    'new',
-        createdAt: Date.now(),
-      });
-
-      form.reset();
-      btn.textContent = 'Отправлено ✓';
-      if (successMsg) successMsg.style.display = 'block';
-
-    } catch (err) {
-      console.error(err);
-      btn.textContent = original;
-      btn.disabled = false;
-      alert('Ошибка отправки, попробуйте снова');
-    }
-  }, true); // true = capture phase, раньше чем main.js
-</script>
-
 </body>
 </html>
