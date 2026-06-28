@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Группы — Клуб им. Парфентьева</title>
+<meta name="description" content="Группы клуба греко-римской борьбы клуб им. Парфентьева по возрасту: расписание, тренеры, запись на тренировку.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.signup-reveal{display:none;margin-top:1em;padding:1em 1.2em;background:var(--bg);border:1px dashed var(--line);border-radius:6px;font-size:.85rem;}
+.signup-reveal.shown{display:block;}
+.signup-reveal b{display:block;margin-bottom:.3em;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">ПАРФЕНТЬЕВ<span>•</span>КЛУБ</a>
+  <nav><ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О клубе</a></li>
+    <li><a href="coaches.html">Тренеры</a></li>
+    <li><a href="groups.html" class="active">Группы</a></li>
+    <li><a href="athletes.html">Воспитанники</a></li>
+    <li><a href="gallery.html">Галерея</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul></nav>
+  <div class="nav-cta">
+    <a href="contacts.html" class="btn btn-ghost">Записаться</a>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero" style="background-image:url('https://i.ibb.co/99vJ49sd/image.png');background-position:center 25%;">
+  <div class="inner">
+    <p class="breadcrumbs"><a href="index.html">Главная</a> / Группы</p>
+    <h1>Группы клуба</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Подбор по возрасту</p>
+    <h2 style="font-size:clamp(1.8rem,3vw,2.4rem);max-width:26ch;">Найдите подходящую группу для себя или ребёнка</h2>
+
+    <div class="cards-grid reveal-stagger" style="margin-top:2.5em;">
+
+      <div class="group-card reveal" style="--i:0;">
+        <div class="group-head"><span class="lvl">Начальная подготовка</span><h3>Юная группа</h3><span class="age">6—8 лет</span></div>
+        <div class="group-body">
+          <div class="group-row"><span>Тренер</span><span>Алавацкий Даниил/Мацуга Владимир</span></div>
+          <div class="group-row"><span>Расписание</span><span>Пн / Ср / Пт, 14:00</span></div>
+          <button class="btn btn-primary group-signup">Записаться</button>
+          <div class="signup-reveal">
+            <b>Адрес зала:</b> село Кулешовка, пер. Матросова, 14
+            <div style="margin-top:.6em;"><b>Свяжитесь с тренером:</b> Алавацкий Даниил — +7 (916) 222-10-05</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group-card reveal" style="--i:1;">
+        <div class="group-head"><span class="lvl">Средний уровень</span><h3>Средняя группа</h3><span class="age">10—14 лет</span></div>
+        <div class="group-body">
+          <div class="group-row"><span>Тренер</span><span>Валерий Николаевич</span></div>
+          <div class="group-row"><span>Расписание</span><span>Пн / Вт / Чт / Пт, 18:00</span></div>
+          <button class="btn btn-primary group-signup">Записаться</button>
+          <div class="signup-reveal">
+            <b>Адрес зала:</b> село Кулешовка, пер. Матросова, 14
+            <div style="margin-top:.6em;"><b>Свяжитесь с тренером:</b> Валерий Николаевич — +7 (916) 222-10-02</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group-card reveal" style="--i:2;">
+        <div class="group-head"><span class="lvl">Продвинутый уровень</span><h3>Старшая группа</h3><span class="age">15 лет и старше</span></div>
+        <div class="group-body">
+          <div class="group-row"><span>Тренер</span><span>Валерий Николаевич</span></div>
+          <div class="group-row"><span>Расписание</span><span>Пн / Вт / Чт / Пт, 18:00</span></div>
+          <button class="btn btn-primary group-signup">Записаться</button>
+          <div class="signup-reveal">
+            <b>Адрес зала:</b> Село Кулешовка, пер. Матросова, 14
+            <div style="margin-top:.6em;"><b>Свяжитесь с тренером:</b> Валерий Николаевич — +7 (916) 222-10-02</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col"><h4>Клуб Парфентьева</h4><p style="max-width:30ch;color:rgba(255,255,255,.6);">Клуб греко-римской борьбы. Воспитываем чемпионов не только на ковре, но и в жизни.</p></div>
+    <div class="footer-col"><h5>Навигация</h5><ul><li><a href="about.html">О клубе</a></li><li><a href="coaches.html">Тренеры</a></li><li><a href="groups.html">Группы</a></li><li><a href="athletes.html">Воспитанники</a></li></ul></div>
+    <div class="footer-col"><h5>Разделы</h5><ul><li><a href="gallery.html">Галерея</a></li><li><a href="news.html">Новости</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+    <div class="footer-col"><h5>Контакты</h5><ul><li>Село Кулешовка, пер. Матросова, 14</li><li>+7 (495) 123-45-67</li><li>info@parfentiev-club.ru</li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Клуб греко-римской борьбы им. Парфентьева. Все права защищены.</span><div class="footer-social"><a href="#">VK</a><a href="#">TG</a><a href="#">YT</a></div></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
