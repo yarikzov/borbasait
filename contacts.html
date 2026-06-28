@@ -70,6 +70,9 @@
           <div class="form-row"><label for="msg">Сообщение</label><textarea id="msg" name="message" rows="4" placeholder="Расскажите немного о себе или ребёнке"></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Отправить заявку</button>
         </form>
+        <p class="form-success" style="display:none;color:green;margin-top:1em;text-align:center;">
+          ✓ Заявка отправлена! Мы свяжемся с вами в течение дня.
+        </p>
       </div>
 
     </div>
@@ -87,5 +90,54 @@
 </footer>
 
 <script src="main.js"></script>
+
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
+  import { getFirestore, addDoc, collection }
+    from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js';
+
+  const app = initializeApp({
+    apiKey:            "AIzaSyBVE4BYhg79L9mjv5btHnA5xFRXXT1Gubc",
+    authDomain:        "wrestling-admin.firebaseapp.com",
+    projectId:         "wrestling-admin",
+    storageBucket:     "wrestling-admin.firebasestorage.app",
+    messagingSenderId: "136539751259",
+    appId:             "1:136539751259:web:003d675da3bb2c0a2bd07e"
+  });
+
+  const db = getFirestore(app);
+
+  const form = document.querySelector('.feedback-form');
+  const successMsg = document.querySelector('.form-success');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const btn = form.querySelector('button[type="submit"]');
+    btn.textContent = 'Отправка...';
+    btn.disabled = true;
+
+    try {
+      await addDoc(collection(db, 'applications'), {
+        name:      document.getElementById('name').value,
+        phone:     document.getElementById('phone').value,
+        age:       document.getElementById('age').value,
+        message:   document.getElementById('msg').value,
+        status:    'new',
+        createdAt: Date.now(),
+      });
+
+      form.reset();
+      btn.textContent = 'Отправлено ✓';
+      if (successMsg) successMsg.style.display = 'block';
+
+    } catch (err) {
+      console.error(err);
+      btn.textContent = 'Ошибка, попробуйте снова';
+      btn.disabled = false;
+    }
+  });
+</script>
+
 </body>
 </html>
