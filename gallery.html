@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — Клуб им. Парфентьева</title>
+  <meta name="description" content="Фотогалерея клуба греко-римской борьбы клуб им. Парфентьева: тренировки, соревнования, сборы, награждения и жизнь клуба.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">ПАРФЕНТЬЕВ<span>•</span>КЛУБ</a>
+  <nav><ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О клубе</a></li>
+    <li><a href="coaches.html">Тренеры</a></li>
+    <li><a href="groups.html">Группы</a></li>
+    <li><a href="athletes.html">Воспитанники</a></li>
+    <li><a href="gallery.html" class="active">Галерея</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul></nav>
+  <div class="nav-cta">
+    <a href="contacts.html" class="btn btn-ghost">Записаться</a>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero" style="background-image:url('https://i.ibb.co/tpjdNbkp/image.png');">
+  <div class="inner">
+    <p class="breadcrumbs"><a href="index.html">Главная</a> / Галерея</p>
+    <h1>Галерея клуба</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="Тренировки">Тренировки</button>
+      <button class="filter-btn" data-filter="Соревнования">Соревнования</button>
+      <button class="filter-btn" data-filter="Сборы">Сборы</button>
+      <button class="filter-btn" data-filter="Награждения">Награждения</button>
+      <button class="filter-btn" data-filter="Жизнь клуба">Жизнь клуба</button>
+    </div>
+
+    <div class="masonry">
+      <div class="item" data-cat="Тренировки" style="grid-row:span 24;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20match%20in%20greco-roman%20at%20the%20University%20International%20Sports%20Festival.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20match%20in%20greco-roman%20at%20the%20University%20International%20Sports%20Festival.jpg?width=1600" loading="lazy" alt="Тренировка"></div>
+      <div class="item" data-cat="Соревнования" style="grid-row:span 30;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Summer%20Olympics%2C%20Greco-Roman%20Wrestling%20130%20kg%2011.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Summer%20Olympics%2C%20Greco-Roman%20Wrestling%20130%20kg%2011.jpg?width=1600" loading="lazy" alt="Соревнования"></div>
+      <div class="item" data-cat="Сборы" style="grid-row:span 22;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2097%20kg%20%E2%80%93%20Mohammad%20Hadi%20Saravi%20%28IRI%29%20vs.%20Arvi%20Savolainen%20%28FIN%29%20%281%29.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2097%20kg%20%E2%80%93%20Mohammad%20Hadi%20Saravi%20%28IRI%29%20vs.%20Arvi%20Savolainen%20%28FIN%29%20%281%29.jpg?width=1600" loading="lazy" alt="Сбор"></div>
+      <div class="item" data-cat="Награждения" style="grid-row:span 26;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Greco-Roman%20wrestling%20competition%20at%20the%201984%20Summer%20Olympics.JPEG?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Greco-Roman%20wrestling%20competition%20at%20the%201984%20Summer%20Olympics.JPEG?width=1600" loading="lazy" alt="Награждение"></div>
+      <div class="item" data-cat="Жизнь клуба" style="grid-row:span 20;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Medalists%20at%20the%20Men%27s%2060%20kg%20Greco%20Roman%20Wrestling.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Medalists%20at%20the%20Men%27s%2060%20kg%20Greco%20Roman%20Wrestling.jpg?width=900" loading="lazy" alt="Жизнь клуба"></div>
+      <div class="item" data-cat="Тренировки" style="grid-row:span 28;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2067%20kg%20%E2%80%93%20Mohammad%20Reza%20Geraei%20%28IRI%29%20vs.%20Ramaz%20Zoidze%20%28GEO%29%20%288%29.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2067%20kg%20%E2%80%93%20Mohammad%20Reza%20Geraei%20%28IRI%29%20vs.%20Ramaz%20Zoidze%20%28GEO%29%20%288%29.jpg?width=1600" loading="lazy" alt="Тренировка"></div>
+      <div class="item" data-cat="Соревнования" style="grid-row:span 24;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Summer%20Olympics%2C%20Greco-Roman%20Wrestling%20130%20kg%2011.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Summer%20Olympics%2C%20Greco-Roman%20Wrestling%20130%20kg%2011.jpg?width=1600" loading="lazy" alt="Соревнования"></div>
+      <div class="item" data-cat="Сборы" style="grid-row:span 30;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2067%20kg%20%E2%80%93%20Mohammad%20Reza%20Geraei%20%28IRI%29%20vs.%20Ramaz%20Zoidze%20%28GEO%29%20%288%29.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2067%20kg%20%E2%80%93%20Mohammad%20Reza%20Geraei%20%28IRI%29%20vs.%20Ramaz%20Zoidze%20%28GEO%29%20%288%29.jpg?width=1600" loading="lazy" alt="Сбор"></div>
+      <div class="item" data-cat="Жизнь клуба" style="grid-row:span 22;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20match%20in%20greco-roman%20at%20the%20University%20International%20Sports%20Festival.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20match%20in%20greco-roman%20at%20the%20University%20International%20Sports%20Festival.jpg?width=1600" loading="lazy" alt="Жизнь клуба"></div>
+      <div class="item" data-cat="Награждения" style="grid-row:span 26;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Greco-Roman%20wrestling%20competition%20at%20the%201984%20Summer%20Olympics.JPEG?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Greco-Roman%20wrestling%20competition%20at%20the%201984%20Summer%20Olympics.JPEG?width=1600" loading="lazy" alt="Награждение"></div>
+      <div class="item" data-cat="Тренировки" style="grid-row:span 20;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Greco-Roman%20wrestling%20competition%20at%20the%201984%20Summer%20Olympics.JPEG?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Greco-Roman%20wrestling%20competition%20at%20the%201984%20Summer%20Olympics.JPEG?width=1600" loading="lazy" alt="Тренировка"></div>
+      <div class="item" data-cat="Соревнования" style="grid-row:span 28;" data-lightbox="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2097%20kg%20%E2%80%93%20Mohammad%20Hadi%20Saravi%20%28IRI%29%20vs.%20Arvi%20Savolainen%20%28FIN%29%20%281%29.jpg?width=1600"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2097%20kg%20%E2%80%93%20Mohammad%20Hadi%20Saravi%20%28IRI%29%20vs.%20Arvi%20Savolainen%20%28FIN%29%20%281%29.jpg?width=1600" loading="lazy" alt="Соревнования"></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox"><button class="lb-close" aria-label="Закрыть">✕</button><img src="" alt="Просмотр изображения"></div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col"><h4>Клуб Парфентьева</h4><p style="max-width:30ch;color:rgba(255,255,255,.6);">Клуб греко-римской борьбы. Воспитываем чемпионов не только на ковре, но и в жизни.</p></div>
+    <div class="footer-col"><h5>Навигация</h5><ul><li><a href="about.html">О клубе</a></li><li><a href="coaches.html">Тренеры</a></li><li><a href="groups.html">Группы</a></li><li><a href="athletes.html">Воспитанники</a></li></ul></div>
+    <div class="footer-col"><h5>Разделы</h5><ul><li><a href="gallery.html">Галерея</a></li><li><a href="news.html">Новости</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+    <div class="footer-col"><h5>Контакты</h5><ul><li>село Кулешовка, пер. Матросова, 14</li><li>+7 (495) 123-45-67</li><li>info@parfentiev-club.ru</li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Клуб греко-римской борьбы им. Парфентьева. Все права защищены.</span><div class="footer-social"><a href="#">VK</a><a href="#">TG</a><a href="#">YT</a></div></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
