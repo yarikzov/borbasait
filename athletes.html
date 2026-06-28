@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Воспитанники — Клуб им. Парфентьева</title>
+<meta name="description" content="Достижения воспитанников клуба греко-римской борьбы клуб им. Парфентьева. Стена чемпионов и победы спортсменов на соревнованиях.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Заглушка фото воспитанника — замените на <img src="..."> внутри .athlete-card, когда появятся фотографии */
+.photo-placeholder{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,var(--charcoal),var(--ink));
+  color:rgba(255,255,255,.35);
+  font-family:var(--display);font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;
+  text-align:center;padding:1em;
+  aspect-ratio:4/5;
+}
+.champion .photo-placeholder{aspect-ratio:1/1;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">ПАРФЕНТЬЕВ<span>•</span>КЛУБ</a>
+  <nav><ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О клубе</a></li>
+    <li><a href="coaches.html">Тренеры</a></li>
+    <li><a href="groups.html">Группы</a></li>
+    <li><a href="athletes.html" class="active">Воспитанники</a></li>
+    <li><a href="gallery.html">Галерея</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul></nav>
+  <div class="nav-cta">
+    <a href="contacts.html" class="btn btn-ghost">Записаться</a>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero" style="background-image:url('https://i.ibb.co/PvnsGyLC/image.png');">
+  <div class="inner">
+    <p class="breadcrumbs"><a href="index.html">Главная</a> / Воспитанники</p>
+    <h1>Стена чемпионов</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Лучшие воспитанники клуба</p>
+    <h2 style="font-size:clamp(1.8rem,3vw,2.4rem);max-width:26ch;">Спортсмены, которыми гордится клуб</h2>
+
+    <!-- ФОТО ВОСПИТАННИКОВ: для каждой карточки замените <div class="photo-placeholder">…</div>
+         на <img src="фото-спортсмена.jpg" alt="Имя спортсмена"> -->
+    <div class="cards-grid reveal-stagger" style="margin-top:2.5em;grid-template-columns:repeat(4,1fr);">
+
+      <div class="athlete-card champion reveal" style="--i:0;">
+        <!-- ФОТО: Воспитанник 1 -->
+        <div class="photo-placeholder">Фото<br>спортсмена</div>
+        <div class="athlete-body">
+          <span class="rank">Мастер спорта</span>
+          <h4 style="font-size:1.4rem;">Воспитанник 1</h4>
+          <p>Чемпион региона среди юниоров (2025), бронза Кубка области.</p>
+        </div>
+      </div>
+
+      <div class="athlete-card champion reveal" style="--i:1;">
+        <!-- ФОТО: Воспитанник 2 -->
+        <div class="photo-placeholder">Фото<br>спортсмена</div>
+        <div class="athlete-body">
+          <span class="rank">Кандидат в мастера спорта</span>
+          <h4 style="font-size:1.4rem;">Воспитанник 2</h4>
+          <p>Победитель первенства региона (2024, 2025), член молодёжной сборной.</p>
+        </div>
+      </div>
+
+      <div class="athlete-card reveal" style="--i:2;">
+        <!-- ФОТО: Воспитанник 3 -->
+        <div class="photo-placeholder">Фото</div>
+        <div class="athlete-body"><span class="rank">I разряд</span><h4>Воспитанник 3</h4><p>Серебро первенства района, 2025.</p></div>
+      </div>
+
+      <div class="athlete-card reveal" style="--i:3;">
+        <!-- ФОТО: Воспитанник 4 -->
+        <div class="photo-placeholder">Фото</div>
+        <div class="athlete-body"><span class="rank">II разряд</span><h4>Воспитанник 4</h4><p>Бронза областного турнира, 2025.</p></div>
+      </div>
+
+      <div class="athlete-card reveal" style="--i:4;">
+        <!-- ФОТО: Воспитанник 5 -->
+        <div class="photo-placeholder">Фото</div>
+        <div class="athlete-body"><span class="rank">II разряд</span><h4>Воспитанник 5</h4><p>Победитель турнира среди девушек, 2024.</p></div>
+      </div>
+
+      <div class="athlete-card reveal" style="--i:5;">
+        <!-- ФОТО: Воспитанник 6 -->
+        <div class="photo-placeholder">Фото</div>
+        <div class="athlete-body"><span class="rank">III разряд</span><h4>Воспитанник 6</h4><p>Финалист первенства клуба, 2025.</p></div>
+      </div>
+
+      <div class="athlete-card reveal" style="--i:6;">
+        <!-- ФОТО: Воспитанник 7 -->
+        <div class="photo-placeholder">Фото</div>
+        <div class="athlete-body"><span class="rank">Юношеский разряд</span><h4>Воспитанник 7</h4><p>Лучший прогресс сезона, группа «Юная группа».</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col"><h4>Клуб Парфентьева</h4><p style="max-width:30ch;color:rgba(255,255,255,.6);">Клуб греко-римской борьбы. Воспитываем чемпионов не только на ковре, но и в жизни.</p></div>
+    <div class="footer-col"><h5>Навигация</h5><ul><li><a href="about.html">О клубе</a></li><li><a href="coaches.html">Тренеры</a></li><li><a href="groups.html">Группы</a></li><li><a href="athletes.html">Воспитанники</a></li></ul></div>
+    <div class="footer-col"><h5>Разделы</h5><ul><li><a href="gallery.html">Галерея</a></li><li><a href="news.html">Новости</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+    <div class="footer-col"><h5>Контакты</h5><ul><li>село Кулешовка, пер. Матросова, 14</li><li>+7 (495) 123-45-67</li><li>info@parfentiev-club.ru</li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Клуб греко-римской борьбы им. Парфентьева. Все права защищены.</span><div class="footer-social"><a href="#">VK</a><a href="#">TG</a><a href="#">YT</a></div></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
