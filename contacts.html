@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Клуб им. Парфентьева</title>
+  <meta name="description" content="Контакты клуба греко-римской борьбы клуб им. Парфентьева: адрес, телефон, email, время работы, форма обратной связи и карта проезда.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">ПАРФЕНТЬЕВ<span>•</span>КЛУБ</a>
+  <nav><ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О клубе</a></li>
+    <li><a href="coaches.html">Тренеры</a></li>
+    <li><a href="groups.html">Группы</a></li>
+    <li><a href="athletes.html">Воспитанники</a></li>
+    <li><a href="gallery.html">Галерея</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="contacts.html" class="active">Контакты</a></li>
+  </ul></nav>
+  <div class="nav-cta">
+    <a href="contacts.html" class="btn btn-ghost">Записаться</a>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Wrestling%20at%20the%202020%20Summer%20Olympics%20%E2%80%93%20Men%27s%20Greco-Roman%2067%20kg%20%E2%80%93%20Mohammad%20Reza%20Geraei%20%28IRI%29%20vs.%20Ramaz%20Zoidze%20%28GEO%29%20%288%29.jpg?width=1600');min-height:340px;height:42vh;">
+  <div class="inner">
+    <p class="breadcrumbs"><a href="index.html">Главная</a> / Контакты</p>
+    <h1>Контакты</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid reveal">
+
+      <div>
+        <p class="eyebrow">Свяжитесь с нами</p>
+        <h2 style="font-size:clamp(1.8rem,3vw,2.2rem);">Мы рядом и всегда на связи</h2>
+        <div class="contact-info-list">
+          <div class="row"><span class="ico">📍</span><div><b>Адрес</b><span>село Кулешовка, пер. Матросова, 14</span></div></div>
+          <div class="row"><span class="ico">📞</span><div><b>Телефон</b><span>+7 (495) 123-45-67</span></div></div>
+          <div class="row"><span class="ico">✉️</span><div><b>Email</b><span>info@parfentiev-club.ru</span></div></div>
+          <div class="row"><span class="ico">🕒</span><div><b>Время работы</b><span>Пн—Сб, 09:00—21:00; Вс — выходной</span></div></div>
+        </div>
+        <div class="social-row">
+          <a href="#" aria-label="VK">VK</a>
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+        <iframe class="map-frame" style="width:100%;margin-top:2em;" loading="lazy"
+                src="https://maps.google.com/maps?q=Kuleshovka%2C%20per.%20Matrosova%2014&t=&z=14&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+      </div>
+
+      <div class="form-card">
+        <h3 style="font-size:1.3rem;text-transform:none;margin-bottom:.3em;">Записаться на тренировку</h3>
+        <p style="color:var(--muted);font-size:.9rem;margin-bottom:1.6em;">Оставьте заявку — администратор клуба свяжется с вами в течение дня.</p>
+        <form class="feedback-form">
+          <div class="form-row"><label for="name">Имя</label><input id="name" name="name" type="text" placeholder="Ваше имя" required></div>
+          <div class="form-row"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required></div>
+          <div class="form-row"><label for="age">Возраст спортсмена</label><input id="age" name="age" type="text" placeholder="Например, 9 лет"></div>
+          <div class="form-row"><label for="msg">Сообщение</label><textarea id="msg" name="message" rows="4" placeholder="Расскажите немного о себе или ребёнке"></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Отправить заявку</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col"><h4>Клуб Парфентьева</h4><p style="max-width:30ch;color:rgba(255,255,255,.6);">Клуб греко-римской борьбы. Воспитываем чемпионов не только на ковре, но и в жизни.</p></div>
+    <div class="footer-col"><h5>Навигация</h5><ul><li><a href="about.html">О клубе</a></li><li><a href="coaches.html">Тренеры</a></li><li><a href="groups.html">Группы</a></li><li><a href="athletes.html">Воспитанники</a></li></ul></div>
+    <div class="footer-col"><h5>Разделы</h5><ul><li><a href="gallery.html">Галерея</a></li><li><a href="news.html">Новости</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+    <div class="footer-col"><h5>Контакты</h5><ul><li>село Кулешовка, пер. Матросова, 14</li><li>+7 (495) 123-45-67</li><li>info@parfentiev-club.ru</li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Клуб греко-римской борьбы им. Парфентьева. Все права защищены.</span><div class="footer-social"><a href="#">VK</a><a href="#">TG</a><a href="#">YT</a></div></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
