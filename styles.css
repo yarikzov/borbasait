@@ -186,18 +186,12 @@ section{position:relative;}
   position:relative;z-index:1;
   padding:0 var(--pad) 7vh;
   width:100%;color:#fff;
-.hero h1 {
-  font-size: clamp(2.6rem, 6.2vw, 5.4rem);
-  max-width: 100%; /* Убрали 14ch, позволяем тексту занимать нужную ширину */
-  color: #fff;
-  margin-bottom: .5em;
 }
-
-/* Оставляем перенос длинных слов только для совсем узких мобильных экранов */
-@media (max-width: 480px) {
-  .hero h1 {
-    word-break: break-word;
-  }
+.hero h1{
+  font-size:clamp(2.6rem,6.2vw,5.4rem);
+  max-width:14ch;
+  color:#fff;
+  margin-bottom:.5em;
 }
 .hero h1 em{
   font-style:normal;color:var(--gold);
